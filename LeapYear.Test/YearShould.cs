@@ -45,5 +45,13 @@ namespace LeapYear.Test
 
             result.Should().Be(true);
         }
+
+        [Test]
+        public void return_true_if_is_divisible_by_4_not_divisible_by_100_other_number_more()
+        {
+            var result = Year.IsLeapYear(2016);
+
+            result.Should().Be(true);
+        }
     }
 }
