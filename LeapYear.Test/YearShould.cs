@@ -29,5 +29,13 @@ namespace LeapYear.Test
 
             result.Should().Be(false);
         }
+
+        [Test]
+        public void return_true_if_is_divisible_by_4_not_divisible_by_100()
+        {
+            var result = Year.IsLeapYear(2008);
+
+            result.Should().Be(true);
+        }
     }
 }
