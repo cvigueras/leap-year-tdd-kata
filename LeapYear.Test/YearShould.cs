@@ -35,5 +35,13 @@ namespace LeapYear.Test
 
             result.Should().Be(true);
         }
+
+        [Test]
+        public void return_true_if_is_divisible_by_100_not_divisible_by_400_other_number_more()
+        {
+            var result = Year.IsLeapYear(1900);
+
+            result.Should().Be(true);
+        }
     }
 }
