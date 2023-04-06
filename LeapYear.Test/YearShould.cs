@@ -23,11 +23,11 @@ namespace LeapYear.Test
         [TestCase(1700)]
         [TestCase(1800)]
         [TestCase(1900)]
-        public void return_true_if_is_divisible_by_100_not_divisible_by_400(int year)
+        public void return_false_if_is_divisible_by_100_not_divisible_by_400(int year)
         {
             var result = Year.IsLeapYear(year);
 
-            result.Should().Be(true);
+            result.Should().Be(false);
         }
     }
 }
