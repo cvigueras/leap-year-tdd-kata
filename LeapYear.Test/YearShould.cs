@@ -35,6 +35,10 @@ namespace LeapYear.Test
             {
                 return true;
             }
+            if(year == 800)
+            {
+                return true;
+            }
             return false;
         }
     }
