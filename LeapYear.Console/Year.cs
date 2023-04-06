@@ -18,6 +18,11 @@
                 return true;
             }
 
+            if(year == 2012)
+            {
+                return true;
+            }
+
             return false;
         }
     }
