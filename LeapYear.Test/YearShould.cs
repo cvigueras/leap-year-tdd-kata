@@ -40,10 +40,12 @@ namespace LeapYear.Test
             result.Should().Be(true);
         }
 
-        [Test]
-        public void return_false_if_is_not_divisible_by_4()
+        [TestCase(2017)]
+        [TestCase(2018)]
+        [TestCase(2019)]
+        public void return_false_if_is_not_divisible_by_4(int year)
         {
-            var result = Year.IsLeapYear(2017);
+            var result = Year.IsLeapYear(year);
 
             result.Should().Be(false);
         }
