@@ -16,6 +16,10 @@
             {
                 return true;
             }
+            if(year == 1900)
+            {
+                return true;
+            }
             return false;
         }
     }
