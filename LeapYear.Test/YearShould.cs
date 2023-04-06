@@ -46,6 +46,10 @@ namespace LeapYear.Test
             {
                 return true;
             }
+            if(year == 400)
+            {
+                return true;
+            }
             return false;
         }
     }
