@@ -12,6 +12,10 @@
             {
                 return true;
             }
+            if(year == 1800)
+            {
+                return true;
+            }
             return false;
         }
     }
