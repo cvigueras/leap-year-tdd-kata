@@ -4,15 +4,7 @@
     {
         public static bool IsLeapYear(int year)
         {
-            if(year == 2000)
-            {
-                return true;
-            }
-            if(year == 800)
-            {
-                return true;
-            }
-            if(year == 400)
+            if(year % 400 == 0)
             {
                 return true;
             }

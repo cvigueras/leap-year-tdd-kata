@@ -13,7 +13,7 @@ namespace LeapYear.Test
         [TestCase(2000)]
         [TestCase(800)]
         [TestCase(400)]
-        public void return_true_if_is_leap_year(int year)
+        public void return_true_if_is_leap_year_divisible_by_400(int year)
         {
             var result = Year.IsLeapYear(year);
 
