@@ -24,7 +24,14 @@ namespace LeapYear.Test
 
             result.Should().Be(true);
         }
-        
+
+        [Test]
+        public void return_true_if_is_leap_year_other_year_more()
+        {
+            var result = Year.IsLeapYear(400);
+
+            result.Should().Be(true);
+        }
     }
 
     public class Year
