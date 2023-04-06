@@ -8,6 +8,10 @@
             {
                 return true;
             }
+            if(year == 1700)
+            {
+                return true;
+            }
             return false;
         }
     }
