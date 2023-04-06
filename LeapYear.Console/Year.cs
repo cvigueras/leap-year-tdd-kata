@@ -23,6 +23,11 @@
                 return true;
             }
 
+            if(year == 2016)
+            {
+                return true;
+            }
+
             return false;
         }
     }
