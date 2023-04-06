@@ -8,18 +8,11 @@
             {
                 return true;
             }
-            if(year == 1700)
+            if(year % 100 == 0 && year % 400 != 0)
             {
                 return true;
             }
-            if(year == 1800)
-            {
-                return true;
-            }
-            if(year == 1900)
-            {
-                return true;
-            }
+
             return false;
         }
     }
