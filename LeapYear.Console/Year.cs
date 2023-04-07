@@ -2,7 +2,7 @@
 {
     public class Year
     {
-        public static bool IsLeapYear(int year)
+        public bool IsLeapYear(int year)
         {
             return year > 0 
                 && (year % 400 == 0 || year % 4 == 0 
