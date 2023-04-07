@@ -18,6 +18,15 @@ namespace LeapYear.Test
             result.Should().Be(false);
         }
 
+        [TestCase(-1)]
+        [TestCase(-20)]
+        public void return_false_if_year_is_less_than_zero(int year)
+        {
+            var result = Year.IsLeapYear(year);
+
+            result.Should().Be(false);
+        }
+
         [TestCase(2000)]
         [TestCase(800)]
         [TestCase(400)]
